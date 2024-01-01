@@ -1,10 +1,10 @@
 name: Deployment
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
       - dev
-
 env:
     MONGODB_DB_NAME: ${{ secrets.MONGODB_DB_NAME }}
 

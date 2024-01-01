@@ -11,8 +11,7 @@ env:
 jobs:
   test:
     env:
-        MONGODB_CLUSTER_ADDRESS: ${{ secrets.MONGODB_CLUSTER_ADDRESS }} mongo-gha.xvb8s0n.mongodb.net
-        MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }} 
+        MONGODB_CLUSTER_ADDRESS: ${{ secrets.MONGODB_CLUSTER_ADDRESS }}
         MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }} 
         PORT: 3000
     environment: testing
